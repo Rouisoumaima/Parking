@@ -3,6 +3,13 @@
 }
 
 .content > mat-card {
-  width: 250px;
   background-color: aliceblue;
+}
+
+
+.grid {
+  text-align: center;
+  width: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Create 2 columns and auto-place rows */
 }

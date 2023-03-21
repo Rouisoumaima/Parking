@@ -11,11 +11,12 @@ export class ParkingComponent {
     this.getParkings();
   }
 
+
     parkingData : any = {}
 
     parkingModify : any = {
       id : '',
-      libelle : '',
+      libelle : 'hello',
       adresse : '',
       capacite : '',
     };
@@ -37,7 +38,7 @@ export class ParkingComponent {
     });
 
     openModel(parking : any){
-
+      console.log(parking)
       this.parkingModify = {
         id : parking.id,
         libelle : parking.libelle,
@@ -45,7 +46,7 @@ export class ParkingComponent {
         capacite : parking .capacite,
       }
 
-      console.log(parking);
+      console.log(this.parkingModify);
     }
 
     check(){
