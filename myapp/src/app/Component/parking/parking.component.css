@@ -1,0 +1,8 @@
+.content {
+  padding: 20px;
+}
+
+.content > mat-card {
+  width: 250px;
+  background-color: aliceblue;
+}
